@@ -13,6 +13,7 @@ class CommandLineInterface
   def menu
     puts "What would you like to do? Type winner to see the winning book, type nominees to see the nominated books or type exit to leave."
     
+    input = nil
     while input != "exit" 
       input = gets.strip.downcase
       case input 
@@ -27,11 +28,13 @@ class CommandLineInterface
   end
   
   def list_winner
-    puts "This is the winner"
+    puts "Here is the winner:"
+    @books = Books.winner
   end
   
   def list_nominees
-    puts "Here are the nominees"
+    puts "Here are the nominees:"
+    @books = Books.nominees
   end
   
   def goodbye
