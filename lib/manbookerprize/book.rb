@@ -1,7 +1,7 @@
 class Book
   
+  @@all = []
   attr_accessor :title, :details
-  @@all []
   
   def initialize(title, details)
     @title = title
@@ -9,8 +9,16 @@ class Book
     @@all << self
   end
   
-  def self.all
+  def self.all 
     @@all
   end
   
+  def nominees
+    
+  end
+  
+  def winner
+    
+  end
 end
+
