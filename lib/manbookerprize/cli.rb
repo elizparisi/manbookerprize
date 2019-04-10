@@ -29,12 +29,12 @@ class CommandLineInterface
   
   def list_winner
     puts "Here is the winner:"
-    @books = Books.winner
+    @book = Book.winner
   end
   
   def list_nominees
     puts "Here are the nominees:"
-    @books = Books.nominees
+    @book = Book.nominees
   end
   
   def goodbye

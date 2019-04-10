@@ -10,4 +10,4 @@ end
 
 require_relative "manbookerprize/cli"
 require_relative "manbookerprize/scraper"
-require_relative "manbookerprize/books"
+require_relative "manbookerprize/book"
